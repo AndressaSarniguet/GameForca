@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap');
+
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.conteudo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+
+#imagens {
+}
+
+.encontrarPalavra {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2em;
+    margin-top: 30px;
+}
+
+.letras {
+    width: 30px;
+    text-align: center;
+    border-bottom: 2px solid #000000;
+    color: azure;
+    padding: 2px;
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
+
+#teclado {
+    margin-top: 50px;
+}
+
+.teclas button {
+    width: 50px;
+    height: 50px;
+    margin: 2px;
+    margin-bottom: 6px;
+    cursor: pointer;
+    box-shadow: 0px 2px 8px #00ffff;
+    border-radius: 5px;
+    border: 1px solid #00ffff;
+    color: #000000;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 900;
+}
+
+    .teclas button:hover {
+        transform: scale(1.4);
+    }
+
+.Categoria {
+    margin-top: 20px;
+    color: #ffffff;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 30px;
+}

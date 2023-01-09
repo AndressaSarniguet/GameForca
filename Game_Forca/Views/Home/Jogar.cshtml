@@ -1,0 +1,75 @@
+﻿@model PalavraSecreta
+@{
+    ViewData["Title"] = "Jogar";
+}
+
+
+<p>@Model.Palavras</p>
+
+<body>
+    <div class="conteudo">
+        <img src="~/sem.png" width="190" height="300" style="animation" />
+        <div id="imagens"></div>
+        <div class="encontrarPalavra">
+               <div class="letras">
+                @for(var i = 0; i < Model.Palavras.Length; i++)
+                {
+                    @if(Model.Palavras[i] != 0)
+                    {
+                        <div class="letras"></div>
+                       
+                    }
+                    else
+                    {
+                        <div class="letras">@Model.Palavras[i]</div>
+                    }
+                }
+
+               </div>
+        </div>
+
+        <div id="teclado">
+            <div class="teclas">
+                <button id="tecla-A" onclick="letraEscolhida('A')">A</button>
+                <button id="tecla-B" onclick="letraEscolhida('B')">B</button>
+                <button id="tecla-C" onclick="letraEscolhida('C')">C</button>
+                <button id="tecla-D" onclick="letraEscolhida('D')">D</button>
+                <button id="tecla-E" onclick="letraEscolhida('E')">E</button>
+                <button id="tecla-F" onclick="letraEscolhida('F')">F</button>
+                <button id="tecla-G" onclick="letraEscolhida('G')">G</button>
+                <button id="tecla-H" onclick="letraEscolhida('H')">H</button>
+                <button id="tecla-I" onclick="letraEscolhida('I')">I</button>
+            </div>
+
+            <div class="teclas">
+                <button id="tecla-J" onclick="letraEscolhida('J')">J</button>
+                <button id="tecla-K" onclick="letraEscolhida('K')">K</button>
+                <button id="tecla-L" onclick="letraEscolhida('L')">L</button>
+                <button id="tecla-M" onclick="letraEscolhida('M')">M</button>
+                <button id="tecla-N" onclick="letraEscolhida('N')">N</button>
+                <button id="tecla-O" onclick="letraEscolhida('O')">O</button>
+                <button id="tecla-P" onclick="letraEscolhida('P')">P</button>
+                <button id="tecla-Q" onclick="letraEscolhida('Q')">Q</button>
+                <button id="tecla-R" onclick="letraEscolhida('R')">R</button>
+            </div>
+
+            <div class="teclas">
+                <button id="tecla-S" onclick="letraEscolhida('S')">S</button>
+                <button id="tecla-T" onclick="letraEscolhida('T')">T</button>
+                <button id="tecla-U" onclick="letraEscolhida('U')">U</button>
+                <button id="tecla-V" onclick="letraEscolhida('V')">V</button>
+                <button id="tecla-X" onclick="letraEscolhida('X')">X</button>
+                <button id="tecla-W" onclick="letraEscolhida('W')">W</button>
+                <button id="tecla-Y" onclick="letraEscolhida('Y')">Y</button>
+                <button id="tecla-Z" onclick="letraEscolhida('Z')">Z</button>
+                <button id="btnreiniciar"><img src="~/reiniciar.ico" width="20" height="20" /></button>
+            </div>
+        </div>
+
+        <div class="Categoria">
+             @Model.Categoria.Descricao
+        </div>
+    </div>
+</body>
+
+
